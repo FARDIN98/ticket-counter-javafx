@@ -1,0 +1,276 @@
+/* Title Bar Buttons */
+
+.close {
+    -fx-background-color: #ff5c5c;
+    -fx-background-size: 11px;
+    -fx-border-color: #e33e41;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+.close:hover {
+    -fx-background-color: #c14645;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #b03537;
+}
+
+
+.expand {
+    -fx-background-color: #e09e3e;
+    -fx-background-size: 11px;
+    -fx-border-color: #5a2607;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+.expand:hover {
+    -fx-background-color: #af7c33;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #5a2607;
+}
+
+
+.minimize {
+    -fx-background-color: #00ca56;
+    -fx-background-size: 11px;
+    -fx-border-color: #14ae46;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+.minimize:hover {
+    -fx-background-color: #029740;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-border-color: #128435;
+}
+
+/* Background Colors */
+
+.main-bg-color {
+    -fx-background-color: #F4F9F9;
+    /*-fx-background-radius: 0px 0px 10px 10px;*/
+}
+
+.sub-bg-color {
+    -fx-background-color: #212121;
+}
+
+.title-bar {
+    -fx-background-color: #b1b1b1;
+}
+
+
+/* Toggle Buttons */
+.button-default {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.button-default:hover {
+    -fx-background-color: linear-gradient(#82c0ce, #3f6770);
+}
+
+.button-selected {
+    -fx-background-color: linear-gradient(#3f6770, #82c0ce);
+}
+
+/* Text Styles */
+.title {
+    -fx-fill: #7c795d;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-font-family: "Comic Sans MS", SansSerif;
+}
+
+
+/* Text Field Styles */
+#login-page .text-field {
+    -fx-background-color: #808080, #EEF2FF;
+    -fx-background-insets: 0, 0 0 2 0;
+    -fx-background-radius: 25;
+}
+
+#login-page .text-field:focused {
+    -fx-background-color: -fx-focus-color, #F5EEDC;
+}
+
+
+/* Button Styles */
+#login-page .registration {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.25em;
+    -fx-padding: 15 15 15 15;
+    -fx-background-color: linear-gradient(to right, #e052a0, #f15c41);
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0, 0, 1);
+}
+
+#login-page .registration:hover {
+    -fx-background-color: #e6375a;
+    -fx-background-image: none;
+}
+
+#login-page .registration:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+#login-page .login {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.25em;
+    -fx-padding: 15 15 15 15;
+    -fx-background-color: linear-gradient(to right, #5522fa 0, #0074e4 100);
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0, 0, 1);
+}
+
+#login-page .login:hover {
+    -fx-background-color: #0167c8;
+    -fx-background-image: none;
+}
+
+#login-page .login:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0, 2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+
+/* CheckBox */
+.check-box {
+    /* default properties */
+    -fx-text-fill: #b62f02;
+    selected-box-color: #28a3f4;
+    box-color: #ffffff;
+    mark-color: #ffffff;
+}
+
+.check-box:hover {
+    -fx-text-fill: #007e69;
+}
+
+.check-box:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: selected-box-color;
+}
+
+.check-box > .box {
+    /* background color of unselected checkbox */
+    -fx-border-color: #015545;
+    -fx-border-width: 2px;
+    -fx-border-style: dotted;
+    -fx-background-color: box-color;
+}
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: mark-color;
+}
+
+/* Toggle Button */
+#theme.toggle-button {
+    -fx-background-color: #F4F9F9;
+    -fx-background-image: url("../img/002-half-moon.png");
+    -fx-border-width: 0px;
+    -fx-background-size: 45;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 25;
+}
+
+#theme.toggle-button:selected {
+    -fx-background-color: #575757;
+    -fx-background-image: url("../img/001-sun.png");
+}
+
+/* Menu Pane CSS */
+#menuPane {
+    -fx-background-color: rgba(240, 248, 247, 0.7);
+}
+
+.menu-item:hover {
+    -fx-background-color: #7ce7f2;
+    -fx-opacity: 0.6;
+}
+
+.menu-item-active {
+    -fx-background-color: #beedf9;
+}
+
+.menu-icon:hover {
+    -fx-opacity: 0.6;
+}
+
+/* Choicebox */
+.combo-box-popup .cell {
+    -fx-font-size: 15;
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 8, 0.0, 0, 0);
+}
+
+.combo-box-popup {
+    -fx-font-size: 20;
+    -fx-padding: 4 0 4 5;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-background-color: -fx-control-inner-background;
+}
+
+
+/* Toggle Button */
+#seat .toggle-button {
+    -fx-background-radius: 20;
+    -fx-text-fill: black;
+    -fx-background-color: #dbd7d7;
+}
+
+#seat .toggle-button:selected {
+    -fx-background-color: #38a338;
+    -fx-text-fill: white;
+}
+
+#seat .toggle-button:selected:hover {
+    -fx-background-color: #4eb44e;
+    -fx-text-fill: white;
+}
+
+#seat .toggle-button:disabled {
+    -fx-background-color: #e03e3e;
+    -fx-text-fill: white;
+}
+
+#seat .toggle-button:selected:disabled {
+    -fx-background-color: #0e98db;
+    -fx-text-fill: white;
+}
+
+.align-center {
+    -fx-alignment: center;
+}
+
+/* About */
+.my-pic {
+    -fx-background-radius: 20;
+}
+
+.hyperlink {
+    -fx-border-color: transparent;
+    -fx-padding: 4 0 4 0;
+}
